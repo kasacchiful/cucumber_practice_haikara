@@ -21,6 +21,26 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'haml-rails'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'rspec'
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem 'database_cleaner'
+  gem 'launchy'
+end
+
+group :development do
+  gem 'awesome_print'
+  gem 'pry-rails'
+  gem 'debugger-pry', :require => 'debugger/pry'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
